@@ -1,20 +1,20 @@
 ### Best-Selling Item for Each Month
 
-Find the best-selling item for each month, without separating the months by year.
+--Find the best-selling item for each month, without separating the months by year.
 
-The best-selling item is determined by the **highest total sales amount**, calculated as:
+--The best-selling item is determined by the **highest total sales amount**, calculated as:
 
-`total_paid = unitprice * quantity`
+--`total_paid = unitprice * quantity`
 
-A negative `quantity` represents a return or cancellation, and these transactions have an invoice number beginning with `'C'`. **Ignore all returns and cancellations** when calculating sales.
+--A negative `quantity` represents a return or cancellation, and these transactions have an invoice number beginning with `'C'`. **Ignore all returns and cancellations** when calculating sales.
 
-**Output:**
+--**Output:**
 
-* `month`
-* `description` of the best-selling item
-* `total_paid`
+--* `month`
+--* `description` of the best-selling item
+--* `total_paid`
 
-Use the `online_retail` table.
+--Use the `online_retail` table.
 
   
 WITH cte AS (
