@@ -1,4 +1,11 @@
---question-We have a table with employees and their salaries; however, some of the records are old and contain outdated salary information. Since there is no timestamp, assume salary is non-decreasing over time. You can consider the current salary for an employee is the largest salary value among their records. If multiple records share the same maximum salary, return any one of them. Output their id, first name, last name, department ID, and current salary. Order your list by employee ID in ascending order
+-- Question:
+-- We have a table with employees and their salaries; however, some of
+-- the records are old and contain outdated salary information.
+-- Since there is no timestamp, assume salary is non-decreasing over time.
+-- The current salary is the largest salary value among an employee's records.
+-- If multiple records share the same maximum salary, return any one of them.
+-- Output employee details and current salary.
+-- Order by employee ID ascending.
 
 with ranked as
 ( select id,first_name, last_name, department_id,salary,
